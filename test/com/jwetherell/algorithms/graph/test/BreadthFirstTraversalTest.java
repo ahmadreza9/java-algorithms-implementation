@@ -38,7 +38,7 @@ public class BreadthFirstTraversalTest {
 
     @Test
     public void test1() {
-        final Graph.Vertex<Integer>[] result = BreadthFirstTraversal.depthFirstTraversal(graph, v2);
+        final Graph.Vertex<Integer>[] result = BreadthFirstTraversal.breadthFirstTraversal(graph, v2);
         Assert.assertTrue(result[0].getValue()==2);
         Assert.assertTrue(result[1].getValue()==0);
         Assert.assertTrue(result[2].getValue()==3);
@@ -47,7 +47,7 @@ public class BreadthFirstTraversalTest {
 
     @Test
     public void test2() {
-        final Graph.Vertex<Integer>[] result = BreadthFirstTraversal.depthFirstTraversal(graph, v0);
+        final Graph.Vertex<Integer>[] result = BreadthFirstTraversal.breadthFirstTraversal(graph, v0);
         Assert.assertTrue(result[0].getValue()==0);
         Assert.assertTrue(result[1].getValue()==1);
         Assert.assertTrue(result[2].getValue()==2);

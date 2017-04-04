@@ -15,7 +15,7 @@ import com.jwetherell.algorithms.data_structures.Graph.Vertex;
 public class BreadthFirstTraversal {
 
     @SuppressWarnings("unchecked")
-    public static final <T extends Comparable<T>> Graph.Vertex<T>[] depthFirstTraversal(Graph<T> graph, Graph.Vertex<T> source) {
+    public static final <T extends Comparable<T>> Graph.Vertex<T>[] breadthFirstTraversal(Graph<T> graph, Graph.Vertex<T> source) {
         // use for look-up via index
         final ArrayList<Vertex<T>> vertices = new ArrayList<Vertex<T>>();
         vertices.addAll(graph.getVertices());
